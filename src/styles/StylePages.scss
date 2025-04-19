@@ -1,0 +1,117 @@
+@import './shared';
+
+.page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @extend %title-style;
+    }
+
+    &__line {
+        margin-top: 20px;
+        position: relative;
+        width: 90%;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        overflow: hidden;
+
+        &-white {
+            width: 201px;
+            height: 4px;
+            position: absolute;
+            background-color: white;
+        }
+    }
+
+    &__fotos-lines {
+        width: 343px;
+        height: 80px;
+        border: 1px solid black;
+    }
+
+    &__question {
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        &-cards {
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+        }
+    }
+
+    &__card {
+        width: 160px;
+    height: 124px;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 4px 0 0 0;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+
+    &.active {
+        background-color: white;
+       
+    }
+}
+
+    &__foto {
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+    }
+
+    &__button-continue {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            @extend %button-style;
+
+        }
+    }
+
+    @media (min-width: 1100px) {
+        &__line {
+            width: 50%;
+        }
+
+        &__card {
+            width: 160px;
+            height: 140px;
+
+            img {
+                width: 96px;
+                height: 96px;
+            }
+        }
+    }
+}

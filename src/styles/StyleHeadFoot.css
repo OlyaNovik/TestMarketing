@@ -1,0 +1,124 @@
+.header {
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__inner {
+  margin: 8px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.header__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .header__text {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    color: #353538;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.header__button {
+  width: 103px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #111212;
+  background-color: white;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 32px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    margin: 32px 0 16px 0;
+  }
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .footer__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer__line p {
+  font-size: 14px;
+  margin: 8px 16px 0 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #353538;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=StyleHeadFoot.css.map */
