@@ -8,7 +8,7 @@
   
 
   %button-style {
-    width: 343px;
+    width: 288px;
     height: 56px;
     border-radius: 16px;
     background-color: rgba(21, 9, 84, 1);
@@ -19,3 +19,16 @@
     cursor: pointer;
   }
   
+
+  %SignIn-style {
+    width: 103px;
+    height: 40px; 
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(17, 18, 18, 1);
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  }
