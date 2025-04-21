@@ -8,17 +8,23 @@ const Footer = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true);
-            setTimeout(() => {
-                setShowMessage(true);
-            }, 10); 
         }, 2000);
-
+    
         return () => clearTimeout(timer);
     }, []);
+    
+    useEffect(() => {
+        if (isVisible) {
+            const timer = setTimeout(() => {
+                setShowMessage(true);
+            }, 100);
+            return () => clearTimeout(timer);
+        }
+    }, [isVisible]);
 
     return (
         <footer className="footer">
-            <div className="footer__inner">
+            <div className="footer__inner layout__content">
                 <div className="footer__columns">
                     <div className="footer__column footer__column--first">
                         <a href="">Terms of Use</a>

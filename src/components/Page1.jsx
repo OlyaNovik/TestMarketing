@@ -11,28 +11,47 @@ import photo6 from '../assets/photo6.png'
 import photo7 from '../assets/photo7.png'
 import photo8 from '../assets/photo8.png'
 import photo9 from '../assets/photo9.png'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const Page1 = () => {
     const [selectedSex, setSelectedSex] = useState(null);
     const ContinueQuestion = () => {
-        if(selectedSex !== null){
+        if (selectedSex !== null) {
             console.log('click');
-            
+
         }
     }
     return (
+        <>
+              <Header />
+   
         <div className="page1">
             <div className="page1__line">
                 <div className="page1__line-white"></div>
             </div>
             <h1 className="page1__title">Glad you're here!</h1>
-            <div className="page1__fotos-lines">
-                <div className="page1__foto"><img src={photo3} alt="photo3" /></div>
-                <div className="page1__foto"><img src={photo4} alt="photo4" /></div>
-                <div className="page1__foto"><img src={photo5} alt="photo5" /></div>
-                <div className="page1__foto"><img src={photo6} alt="photo6" /></div>
+
+
+            <div className="page1__slider-container">
+                <div className="page1__slider-track">
+                    <div className="page1__foto"><img src={photo1} alt="" /></div>
+                    <div className="page1__foto"><img src={photo2} alt="" /></div>
+                    <div className="page1__foto"><img src={photo3} alt="" /></div>
+                    <div className="page1__foto"><img src={photo4} alt="" /></div>
+                    <div className="page1__foto"><img src={photo5} alt="" /></div>
+                    <div className="page1__foto"><img src={photo6} alt="" /></div>
+                    <div className="page1__foto"><img src={photo7} alt="" /></div>
+                    <div className="page1__foto"><img src={photo8} alt="" /></div>
+                    <div className="page1__foto"><img src={photo9} alt="" /></div>
+
+                    <div className="page1__foto"><img src={photo1} alt="" /></div>
+                    <div className="page1__foto"><img src={photo2} alt="" /></div>
+                    <div className="page1__foto"><img src={photo3} alt="" /></div>
+                </div>
             </div>
+
             <div className="page1__question">
                 <p>Select your sex</p>
                 <div className="page1__question-cards">
@@ -56,6 +75,8 @@ const Page1 = () => {
                 </div>
             </div>
         </div>
+        <Footer />
+        </>
     );
 };
 

@@ -1,34 +1,136 @@
-
 %title-style {
-    font-weight: 600;
-    font-size: 24px;
-    color: rgba(53, 53, 56, 1);
-    font-family: 'Poppins', sans-serif;
-  }
-  
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(53, 53, 56, 1);
+  font-family: 'Poppins', sans-serif;
 
-  %button-style {
-    width: 288px;
-    height: 56px;
-    border-radius: 16px;
-    background-color: rgba(21, 9, 84, 1);
-    color: white;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    cursor: pointer;
+  @media (orientation: landscape) {
+    font-size: 36px;
   }
-  
 
-  %SignIn-style {
-    width: 103px;
-    height: 40px; 
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: rgba(17, 18, 18, 1);
-    background-color: white;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
+  @media (min-width: 700px) {
+    font-size: 36px;
   }
+}
+
+@mixin text-style($font: 'Inter', $weight: 600) {
+  font-size: 14px;
+  font-weight: $weight;
+  font-family: $font, sans-serif;
+  color: rgba(53, 53, 56, 1);
+
+  @media (orientation: landscape) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 700px) {
+    font-size: 20px;
+  }
+}
+
+
+%button-style {
+  width: 288px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: rgba(21, 9, 84, 1);
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    width: 320px;
+  }
+
+  @media (min-width: 375px) {
+    width: 343px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 400px;
+  }
+}
+
+
+%SignIn-style {
+  width: 103px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(17, 18, 18, 1);
+  background-color: white;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+%line-style {
+  margin-top: 20px;
+  position: relative;
+  width: 288px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+%line-white-style {
+  width: 40%;
+  height: 4px;
+  position: absolute;
+  background-color: white;
+}
+
+
+%page-style-general {
+  padding: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@mixin select-style($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 16px;
+
+  border: none;
+  padding: 0 12px 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  appearance: none;
+  background: url('../assets/arrow.svg') no-repeat right 15px center;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-size: 16px;
+}
+
+
+%input-style {
+  width: 272px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  padding: 0 0px 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+
+  @media (min-width: 375px) {
+    width: 343px;
+  }
+
+  @media (orientation: landscape) and (min-width: 420px) {
+    width: 384px;
+  }
+
+
+
+  @media (min-width: 1000px) {
+    width: 384px;
+  }
+}
