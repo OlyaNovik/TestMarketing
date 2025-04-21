@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styles/StyleHeadFoot.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -9,10 +10,10 @@ const Footer = () => {
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 2000);
-    
+
         return () => clearTimeout(timer);
     }, []);
-    
+
     useEffect(() => {
         if (isVisible) {
             const timer = setTimeout(() => {
@@ -21,7 +22,11 @@ const Footer = () => {
             return () => clearTimeout(timer);
         }
     }, [isVisible]);
+    const navigate = useNavigate();
 
+    const handleSignInClick = () => {
+        navigate('/step-2');
+    };
     return (
         <footer className="footer">
             <div className="footer__inner layout__content">
@@ -47,7 +52,7 @@ const Footer = () => {
                         <div className="footer__message-block">
                             <p>We use cookies to make your experience better! If you continue to use this site we will assume you are happy with it.</p>
                         </div>
-                        <button className="footer__message-block__button">Sign in</button>
+                        <button className="footer__message-block__button" onClick={handleSignInClick}>Sign in</button>
                     </div>
                 </div>
             )}
