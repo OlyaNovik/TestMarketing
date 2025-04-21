@@ -265,6 +265,8 @@
             appearance: none; 
             -webkit-appearance: none; 
             -moz-appearance: none; 
+            color: rgba(53, 53, 56, 1)!important;
+
             @include select-style(132px, 60px);
 
             @media (orientation: landscape) and (min-width: 468px) {
@@ -297,6 +299,7 @@
             appearance: none; 
             -webkit-appearance: none; 
             -moz-appearance: none; 
+            color: rgba(53, 53, 56, 1)!important;
             @include select-style(288px, 60px);
             margin: 8px 0 0 0;
 
