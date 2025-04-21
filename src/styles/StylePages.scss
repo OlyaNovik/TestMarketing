@@ -262,7 +262,9 @@
         }
 
         select {
-
+            appearance: none; 
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
             @include select-style(132px, 60px);
 
             @media (orientation: landscape) and (min-width: 468px) {
@@ -292,6 +294,9 @@
         }
 
         select {
+            appearance: none; 
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
             @include select-style(288px, 60px);
             margin: 8px 0 0 0;
 

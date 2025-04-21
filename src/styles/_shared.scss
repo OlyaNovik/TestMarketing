@@ -40,7 +40,9 @@
   font-size: 24px;
   cursor: pointer;
   margin-bottom: 15px;
-
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   @media (min-width: 768px) {
     width: 320px;
   }
