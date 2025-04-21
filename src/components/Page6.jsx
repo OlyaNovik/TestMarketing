@@ -1,5 +1,5 @@
-import Logo from '../assets/Logo.png';
-import Icon from '../assets/icon_last.png';
+import Logo from '../assets/Logo.webp';
+import Icon from '../assets/icon_last.webp';
 import { useState } from 'react';
 
 const Page6 = () => {

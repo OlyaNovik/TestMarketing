@@ -1,5 +1,5 @@
 import '../styles/StyleHeadFoot.scss';
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/Logo.webp';
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {

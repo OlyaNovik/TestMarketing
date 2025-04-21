@@ -1,4 +1,4 @@
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/Logo.webp';
 import HeaderPages from '../components/HeaderPages.jsx';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import HeaderPages from '../components/HeaderPages.jsx';
-import Hot from '../assets/hot.png';
-import Trendy from '../assets/trendy.png';
+import Hot from '../assets/hot.webp';
+import Trendy from '../assets/trendy.webp';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
